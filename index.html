@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>    
+<body>
+ <div class="sidebar">
+    <h1 class="logo">FoodTime</h1>
+    <div class="sidebar-menu">
+        <a href="#"><i class="ri-home-4-line"></i></i>Home</a>
+        <a href="#"><i class="ri-bill-line"></i>Bills</a>
+        <a href="#"><i class="ri-wallet-3-line"></i>Wallet</a>
+        <a href="#"><i class="ri-notification-3-line"></i>Notification</a>
+        <a href="#"><i class="ri-question-answer-line"></i></i>Contact Us</a>
+        <a href="#"><i class="ri-settings-5-line"></i>Settings</a>
+    </div>
+    <div class="sidebar-logout">
+        <a href="#"><i class="ri-logout-box-r-line"></i>Logout</a>
+    </div>
+</div>
+    <div class="main">
+        <div class="main-navbar">
+            <i class="ri-menu-2-line" id="menu-toggle"></i>
+            <div class="search">
+                <input type="text" placeholder="What you want to eat?">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="profile">
+                <a href="#" class="cart"><i class="ri-shopping-cart-line"></i></a>
+                <a href="#" class="user"><i class="ri-folder-user-line"></i></a>
+            </div>
+        </div>
+        <div class="main-highlight">
+            <div class="main-header">
+                <h2 class="main-title">Recomendations</h2>
+                <div class="main-arrow">
+                    <i class="ri-arrow-left-circle-line"></i>
+                    <i class="ri-arrow-right-circle-line"></i>
+                </div>
+            </div>
+            <div class="highlight-wrapper">
+                <div class="highlight-card">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="highlight-desc">
+                        <h4>Fresh Salad</h4>
+                        <p>300 &#8377</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1572373696785-e8bd92718f65?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="highlight-desc">
+                        <h4>Hot Cofee</h4>
+                        <p>100 &#8377</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1633436375795-12b3b339712f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="highlight-desc">
+                        <h4>Premium Steak</h4>
+                        <p>500 &#8377</p>
+                    </div>
+                </div>
+                <div class="highlight-card">
+                    <img class="highlight-img" src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="highlight-desc">
+                        <h4>Big Burger</h4>
+                        <p>700 &#8377</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-menus">
+            <div class="main-filter">
+                <div>
+                    <h2 class="main-title">Menu <br> Category</h2>
+                    <div class="main-arrow">
+                        <i class="ri-arrow-left-circle-line"></i>
+                        <i class="ri-arrow-right-circle-line"></i>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <p>All Menus</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-burger"></i>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-pizza-slice"></i>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-wine-bottle"></i>
+                        </div>
+                        <p>Wine</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-ice-cream"></i>
+                        </div>
+                        <p>Ice Cream</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <p>Cofee</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-fish-fins"></i>
+                        </div>
+                        <p>Seafood</p>
+                    </div>
+                    <div class="filter-card">
+                        <div class="filter-icon">
+                            <i class="fa-solid fa-apple-whole"></i>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="main-detail">
+                <h2 class="main-title">Choose Order</h2>
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img class="detail-img" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Shrimp Soup</h4>
+                                <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, dolorum!</p>
+                                <p class="price">350 &#8377</p>
+                            </div>
+                            <i class="ri-bookmark-line"></i>
+                        </div> 
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Pizza</h4>
+                                <p class="detail-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, quisquam.</p>
+                                <p class="price">199 &#8377</p>
+                            </div>
+                            <i class="ri-bookmark-line"></i>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img class="detail-img" src="https://images.unsplash.com/photo-1474722883778-792e7990302f?q=80&w=1382&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h4>Wine</h4>
+                                <p class="detail-sub">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, recusandae?</p>
+                                <p class="price">1000 &#8377</p>
+                            </div>
+                            <i class="ri-bookmark-line"></i>
+                        </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1530&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Big Beef Burger</h4>
+                            <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, corporis?</p>
+                            <p class="price">450 &#8377</p>
+                        </div>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="https://images.unsplash.com/photo-1588483977150-9c2127ab7bcc?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Hot Cafe Latte</h4>
+                            <p class="detail-sub">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, accusantium.</p>
+                            <p class="price">250 &#8377</p>
+                        </div>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+                <div class="detail-card">
+                    <img class="detail-img" src="https://images.unsplash.com/photo-1547496502-affa22d38842?q=80&w=1577&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <div class="detail-desc">
+                        <div class="detail-name">
+                            <h4>Fresh Salad</h4>
+                            <p class="detail-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, labore!</p>
+                            <p class="price">600 &#8377</p>
+                        </div>
+                        <i class="ri-bookmark-line"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
